@@ -12,11 +12,11 @@
 </template>
   
 <script lang="ts" setup>
-import LoginHeader from './LoginHeader.vue';
+import LoginHeader from './LoginHeader.vue'
 import LoginButton from './LoginButton.vue'
 import LoginInput from './LoginInput.vue'
-</script>
-  
+</script> 
+
 <style scoped>
 .login-form{
     display: flex;

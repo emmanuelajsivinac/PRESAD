@@ -1,16 +1,16 @@
 <template>
-<div class="header-form">
-    <FormHeader />
     <div class="header-form">
-        <span class="highlight-word">Inicio de Sesión</span>
+        <FormHeader />
+        <div class="header-form">
+            <span class="highlight-word">Crear una cuenta</span>
+        </div>
     </div>
-</div>
-</template>
-      
+    </template>
+          
 <script lang="ts" setup>
 import FormHeader from './FormHeader.vue';
 </script>
-      
+          
 <style scoped>
 .header-form{
     display: flex;
