@@ -8,12 +8,14 @@
 </script>
 
 <style scoped>
-.header-form-1{
+.header-form{
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .highlight-word{

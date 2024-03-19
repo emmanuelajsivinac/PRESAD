@@ -1,19 +1,23 @@
 <template>
-<div class="buttons">
-    <button class="login-btn" @click="selectButton('login')">Iniciar Sesión</button>
-    <button class="login-btn" @click="selectButton('signup')">Crear Cuenta</button>
-</div>
+  <div>
+    <div v-if="change" class="buttons">
+      <button class="login-btn">Iniciar Sesión</button>
+      <button class="login-btn" @click="toggle">Crear Cuenta</button>
+    </div>
+    <div v-else class="buttons">
+      <button class="login-btn" @click="toggle">Iniciar Sesión</button>
+      <button class="login-btn">Crear Cuenta</button>
+    </div>
+  </div>
 </template>
   
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { defineProps } from "vue";
 
-const activeButton = ref('');
-
-const selectButton = (button: string) => {
-  activeButton.value = button;
-  console.log(activeButton.value);
-};
+defineProps({
+  toggle: Function,
+  change: Boolean,
+});
 
 </script>
   

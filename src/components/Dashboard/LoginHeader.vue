@@ -1,9 +1,6 @@
 <template>
 <div class="header-form">
     <FormHeader />
-    <div class="header-form">
-        <span class="highlight-word">Inicio de Sesión</span>
-    </div>
 </div>
 </template>
       
@@ -29,8 +26,4 @@ import FormHeader from './FormHeader.vue';
     height: auto;
 }
 
-.highlight-word{
-    font-weight: 800;
-    font-size: 200%;
-}
 </style>
